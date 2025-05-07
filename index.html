@@ -2,49 +2,69 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis XV Años</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <div class="card">
+  <!-- Decoraciones fijas en esquinas -->
+  <img src="img/Floresborde.png" class="decor top-left" />
 
-    <div class="blur-bg"></div>
+  <!-- Sección 1: Presentación -->
+  <div class="section">
+    <img src="img/Letras.png" alt="Mis XV Años" class="imagen-xv">
+    <p class="frase">Hay momentos inolvidables que se atesoran en el corazón...</p>
+    <div class="separador">
+      <img src="img/flores.png" alt="Flores separador">
+    </div>
 
-    <div class="flower top-left"></div>
-    <div class="flower bottom-right"></div>
-
-    <div class="content">
-      <h1 class="nombre">Alma Sofia</h1>
-      <br><br>
-      <h2 class="titulo">Mis <span>XV</span> Años</h2>
-      <br><br>
-      <div class="audio-controls">
-        <img id="playPause" src="img/Captura de pantalla 2025-05-04 182926.png" alt="Pausa" class="audio-icon" />
-      </div>
-      <audio id="bgMusic" src="music.mp3" preload="auto" autoplay></audio>
-      <br><br>
-      <p class="fade-in delay1">TE INVITAMOS A CELEBRAR<br>MIS XV AÑOS.</p>
-      <p class="fade-in delay2">ACOMPÁÑANOS EN UNA<br>NOCHE INOLVIDABLE LLENA<br>DE MAGIA Y ALEGRÍA.</p>
-
-      <div class="date-container fade-in delay3">
-        <span>JUL</span>
-        <span>|</span>
-        <span><br>18</span>
-        <span>|</span>
-        <span>2025</span>
-      </div>
-      <p class="hora-evento fade-in delay4">A las 8:00 PM</p>
-      <a href="https://maps.app.goo.gl/off24PqLS27FnAxr5?g_st=aw" target="_blank" class="btn-ubicacion">
-        Ver ubicación 📍
-      </a><br><br>
-      <p id="countdown" class="contador fade-in delay4">Cargando contador...</p>
-
+    <!-- Botón de música -->
+    <div class="musica">
+      <audio id="miAudio" loop>
+        <source src="img/cancion.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio.
+      </audio>
+      <img src="img/pausa.png" alt="Botón de música" id="botonMusica" class="boton-musica" />
     </div>
   </div>
-  
-  
+
+  <!-- Sección 2: Fecha -->
+  <div class="section">
+    <h2 class="fecha">Sábado 18 | Julio | 2025</h2>
+    <p class="frase">Una fecha especial para compartir contigo</p>
+    <div class="separador">
+      <img src="img/flores.png" alt="Flores separador">
+    </div>
+  </div>
+
+  <!-- Sección 3: Contador -->
+  <div class="section">
+    <h2>Faltan</h2>
+    <p id="countdown" class="contador">Cargando...</p>
+    <div class="separador">
+      <img src="img/flores.png" alt="Flores separador">
+    </div>
+  </div>
+
+  <!-- Sección 4: Ubicación -->
+  <div class="section">
+    <h2>Salón Casablanca</h2>
+    <p>21:00 HS</p>
+    <a href="https://maps.app.goo.gl/off24PqLS27FnAxr5" target="_blank" class="btn">Ver ubicación 📍</a>
+    <div class="separador">
+      <img src="img/flores.png" alt="Flores separador">
+    </div>
+  </div>
+<!-- Sección de Confirmación -->
+<footer class="footer">
+  <h2>¿Nos acompañas?</h2>
+  <a href="https://wa.me/5210000000000?text=¡Confirmo%20mi%20asistencia%20a%20los%20XV!" target="_blank" class="btn btn-confirmar">Confirma tu asistencia ✅</a>
+  <img src="img/Floresborde2.png" class="footer-img" />
+</footer>
+
+
+
   <script src="script.js"></script>
 </body>
 </html>
