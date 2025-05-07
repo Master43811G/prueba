@@ -44,6 +44,8 @@ body {
   .btn-confirmar {
     background-color: #d86f72;
     margin-top: -10px;
+    position: relative;
+    z-index: 2;
   }
   
   /* Separadores */
@@ -86,31 +88,32 @@ body {
     margin-top: 60px;
   }
   
-  .footer h2 {
-    font-size: 5vw;
-    color: #b84a4a;
-    margin-top: -150px;
-    margin-bottom: 10px;
+  .footer {
+    position: relative;
+    background-color: #fce4ec;
+    padding: 200px 20px 180px; /* Más espacio abajo para el botón */
+    text-align: center;
+    margin-top: 60px;
+    z-index: 1; /* Asegura que el contenido esté encima */
   }
   
   .footer-img {
     position: absolute;
     bottom: 0;
-    right: 0;
-    width: 100%;
-    max-width: 500px;
+    left: 0;
+    width: 100vw;
     height: auto;
-    display: block;
+    z-index: 0; /* Detrás del contenido */
+    pointer-events: none;
   }
-  
   /* Decoraciones normales (ya no fijas) */
   .decor {
+    width: 100vw;
+    max-width: none;
     height: auto;
-    width: 100%;
-    max-width: 500px;
+    display: block;
     opacity: 0.7;
     pointer-events: none;
-    margin: 0 auto;
-    display: block;
+    margin: 0;
   }
   
