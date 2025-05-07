@@ -1,3 +1,4 @@
+/* Estilo general */
 body {
     margin: 0;
     font-family: 'Georgia', serif;
@@ -7,6 +8,7 @@ body {
     overflow-x: hidden;
   }
   
+  /* Secciones generales */
   .section {
     padding: 40px 20px;
     max-width: 500px;
@@ -28,6 +30,7 @@ body {
     font-weight: bold;
   }
   
+  /* Botones */
   .btn {
     font-size: 4vw;
     background-color: #f7a89e;
@@ -38,25 +41,19 @@ body {
     display: inline-block;
   }
   
+  .btn-confirmar {
+    background-color: #d86f72;
+    margin-top: -10px;
+  }
+  
+  /* Separadores */
   .separador img {
     width: 200px;
     margin: 40px auto;
     display: block;
   }
   
-  /* Decoraciones fijas */
-  .decor {
-   height: auto;
-    width: 500px;
-    z-index: 1000;
-    opacity: 0.7;
-    pointer-events: none;
-  }
-  
-  .top-left {
-    top: 0;
-    left: 0;
-  }
+  /* Imagen central */
   .imagen-xv {
     width: 80%;
     max-width: 200px;
@@ -64,40 +61,36 @@ body {
     margin: 0 auto;
     display: block;
   }
+  
+  /* Música */
   .musica {
-  margin-top: 20px;
-}
-
-.boton-musica {
-  width: 60px;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.boton-musica:hover {
-  transform: scale(1.1);
-}
-
-  
-.footer h2 {
-    font-size: 5vw;
-    color: #b84a4a;
-    margin-top: -150px; /* Mueve el título hacia arriba */
-    margin-bottom: 10px; /* Menos espacio debajo */
+    margin-top: 20px;
   }
   
-  
-  .footer .btn-confirmar {
-    margin-top: -10px; /* Opcional si quieres pegarlo aún más */
+  .boton-musica {
+    width: 60px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
   }
   
+  .boton-musica:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Footer */
   .footer {
     background-color: #fce4ec;
-    padding: 200px 20px 100px; /* Arriba 30px, laterales 20px, abajo 100px */
-    position: relative;  
+    padding: 200px 20px 100px;
+    position: relative;
     text-align: center;
     margin-top: 60px;
-    position: relative; /* Mantener la imagen dentro del contenedor */
+  }
+  
+  .footer h2 {
+    font-size: 5vw;
+    color: #b84a4a;
+    margin-top: -150px;
+    margin-bottom: 10px;
   }
   
   .footer-img {
@@ -105,8 +98,19 @@ body {
     bottom: 0;
     right: 0;
     width: 100%;
-    max-width: 500px; /* Ajustar el tamaño máximo */
+    max-width: 500px;
     height: auto;
-    display: block; /* Asegura que la imagen se muestre correctamente */
+    display: block;
+  }
+  
+  /* Decoraciones normales (ya no fijas) */
+  .decor {
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+    opacity: 0.7;
+    pointer-events: none;
+    margin: 0 auto;
+    display: block;
   }
   
