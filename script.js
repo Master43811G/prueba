@@ -29,11 +29,11 @@ let reproduciendo = false;
 botonMusica.addEventListener("click", () => {
   if (reproduciendo) {
     miAudio.pause();
-    botonMusica.src = "img/pausa.png"; // Play
+    botonMusica.src = "img/boton-de-reproduccion.png"; // Play
     reproduciendo = false;
   } else {
     miAudio.play();
-    botonMusica.src = "img/boton-de-reproduccion.png"; // Pause
+    botonMusica.src = "img/pausa.png"; // Pause
     reproduciendo = true;
   }
 });
