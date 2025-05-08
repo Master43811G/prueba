@@ -57,7 +57,7 @@ body {
   
   /* Imagen central */
   .imagen-xv {
-    width: 80%;
+    width: 100%;
     max-width: 200px;
     height: auto;
     margin: 0 auto;
