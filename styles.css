@@ -116,4 +116,27 @@ body {
     pointer-events: none;
     margin: 0;
   }
+  .classlluvia {
+    text-align: center;
+    margin: 40px auto;
+  }
+  
+  .classlluvia img {
+    width: 120px; /* más grande que antes */
+    height: auto;
+    display: block;
+    margin: 0 auto 15px auto; /* centrado y con espacio abajo */
+  }
+  
+  .texto-lluvia {
+    display: inline-block;
+    background-color: white;
+    padding: 12px 25px;
+    border-radius: 20px;
+    font-family: 'Georgia', serif;
+    font-size: 4.5vw;
+    color: #b84a4a;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0;
+  }
   
